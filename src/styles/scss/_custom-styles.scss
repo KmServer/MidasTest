@@ -1,0 +1,60 @@
+// Your custom styles
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+a {
+  color: grey;
+  font-size: 1.2rem;
+  &:hover {
+    color: #08e8de;
+  }
+
+  &:active {
+    color: #08e8de;
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.h {
+  &-1 {
+    height: 1rem;
+  }
+  &-2 {
+    height: 2rem;
+  }
+  &-3 {
+    height: 3rem;
+  }
+  &-4 {
+    height: 4rem;
+  }
+  &-5 {
+    height: 5rem;
+  }
+}
+
+.m {
+  &-v1 {
+    margin: 0.25rem 0 !important;
+  }
+  &-v2 {
+    margin: 0.5rem 0 !important;
+  }
+  &-v3 {
+    margin: 1rem 0 !important;
+  }
+  &-v4 {
+    margin: 1.5rem 0 !important;
+  }
+  &-v5 {
+    margin: 3rem 0 !important;
+  }
+}

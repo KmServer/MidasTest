@@ -1,0 +1,12 @@
+// Media breakpoints
+$phone-max:   '(max-width: 768px)';
+$tablet-max:  '(min-width: 769px) and (max-width: 1179px)';
+$tabletLand-max:  '(min-width: 769px) and (max-width: 1367px)';
+$desktop-max: '(min-width: 1180px) and (max-width: 1499px)';
+$desktopWide-max: '(min-width: 1500px)';
+
+$phone:   '(min-width: 0)';
+$tablet:  '(min-width: 769px)';
+$tabletLand:  '(min-width: 769px)';
+$desktop: '(min-width: 1180px)';
+$desktopWide: '(min-width: 1500px)';

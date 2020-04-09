@@ -1,0 +1,9 @@
+@import '../../../mq';
+
+@media #{$phone-max} {
+  body {
+    color: #161616;
+    font-family: ProximaNova;
+  }
+
+}

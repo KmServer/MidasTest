@@ -1,0 +1,45 @@
+/* CUSTOM-STYLES */
+
+// .wrapper {
+//   wrapper();
+// }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #283885;
+}
+
+//html {
+//  box-sizing: border-box;
+//}
+//
+//*, *::before, *::after {
+//  box-sizing: inherit;
+//}
+
+h1 {
+  font-size: 1.8em;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin: 5px 0;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.container {
+  @include row-flex();
+    @include md(justify-content, center);
+ 
+    .item {
+        @include col();
+        @include size(3);
+        @include size-md(5);
+        @include size-xs(10);
+    }
+}

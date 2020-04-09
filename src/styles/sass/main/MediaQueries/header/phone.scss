@@ -1,0 +1,46 @@
+@import '../../../mq';
+
+@media #{$phone} {
+  .header {
+
+
+    & a {
+      //font-size: 2rem;
+    }
+
+    &_block {
+      //width: $site-width;
+      ////position: fixed;
+      //margin: 0 auto;
+      //margin-top: 19px;
+      //display: flex;
+      //flex-wrap: wrap;
+      //justify-content: space-between;
+    }
+
+    &_logo {
+      //margin-right: 20px;
+
+      &_img {
+
+      }
+    }
+
+    &_list {
+      //display: flex;
+    }
+
+    &_item {
+      //margin-right: 20%;
+      //min-width: 95px;
+
+      &:last-child {
+        //margin-right: 0;
+      }
+    }
+
+    &_link {
+      //font-size: 1.2rem;
+    }
+  }
+}

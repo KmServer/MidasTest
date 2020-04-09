@@ -1,0 +1,11 @@
+@import '../../../mq';
+
+@media #{$phone} {
+  .footer {
+
+    &_block {
+
+    }
+
+  }
+}

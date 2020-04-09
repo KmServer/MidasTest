@@ -1,0 +1,131 @@
+@function rem($px) {
+    @return ($px / 16) +rem;
+}
+@function pt-rem($pt) {
+    @return ($pt * 1.33 / 16) +rem;
+}
+
+@function px-rem($rem) {
+    @return ($rem * 16) +px;
+}
+
+@function l-h($font, $height) {
+    @return ($height / $font * 100%);
+}
+// add functional smart-grid
+@import "../vendor/import/smart-grid.scss";
+
+// Спомогательные стили
+.__full-hd {
+    @include to($break_md) {
+        display: none !important;
+    }
+    @include xl-block() {
+        display: block;
+    }
+}
+
+.__laptop {
+    @include to($break_md) {
+        display: none !important;
+    }
+    @include lg-block() {
+        display: block;
+    }
+}
+
+.__tablet {
+    @include from($break_md + 1) {
+        display: none !important;
+    }
+    @include md-block() {
+        display: block;
+    }
+}
+
+.__mobile-big {
+    @include from($break_sm + 1) {
+        display: none !important;
+    }
+    @include sm-block() {
+        display: block;
+    }
+}
+
+.__mobile {
+    @include from($break_xs + 1) {
+        display: none !important;
+    }
+    @include xs-block() {
+        display: block;
+    }
+}
+
+@mixin sm-only(){
+    @media screen and (min-width: $break_xs + 1) and (max-width: $break_sm){
+        @content;
+    }
+}
+
+@mixin md-only(){
+    @media screen and (min-width: $break_sm + 1) and (max-width: $break_md){
+        @content;
+    }
+}
+
+@mixin lg-only(){
+    @media screen and (min-width: $break_md + 1) and (max-width: $break_lg){
+        @content;
+    }
+}
+
+@mixin procents($procent){
+    body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td{
+        width: $procent;
+        height: $procent;
+    }
+    table{
+        width: $procent;
+        height: $procent;
+    }
+    fieldset,img,abbr{
+        width: $procent;
+        height: $procent;
+    }
+    address,caption,cite,code,dfn,em,strong,th,var{
+        width: $procent;
+        height: $procent;
+    }
+    ul li{
+        width: $procent;
+        height: $procent;
+    }
+    caption,th{
+        width: $procent;
+        height: $procent;
+    }
+    h1,h2,h3,h4,h5,h6{
+        width: $procent;
+        height: $procent;
+    }
+
+    input,textarea,select{
+        width: $procent;
+        height: $procent;
+    }
+
+    article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{
+        width: $procent;
+        height: $procent;
+    }
+    img{
+        width: $procent;
+        height: $procent;
+    }
+}
+
+@mixin col-not-margin(){
+    box-sizing: border-box;
+    word-wrap: break-word;
+    //@include col-offsets(margin);
+}

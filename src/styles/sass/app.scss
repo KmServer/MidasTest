@@ -1,0 +1,11 @@
+// Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
+// @import "variables";
+
+// Подключение нужных SCSS исходников Bootstrap 4
+// @import "../../bower_components/bootstrap/scss/bootstrap";
+
+// Подключение миксинов
+@import "main/mixins";
+@import 'main/main_app';
+@import 'main/custom-styles';
+@import 'main.scss';
